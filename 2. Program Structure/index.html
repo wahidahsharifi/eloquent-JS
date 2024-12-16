@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>fizz buzz</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <script>
+         for (let i = 1; i <= 100; i++) {
+            if ((i % 3 == 0) & (i % 5 == 0)) {
+               console.log(`${i} fizz buzz`);
+            } else if (i % 3 == 0) {
+               console.log(`${i} buzz`);
+            } else if (i % 5 == 0) {
+               console.log(`${i} fizz`);
+            }
+         }
+      </script>
+   </body>
+</html>
