@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>bean count</title>
+   </head>
+   <body>
+      <script>
+         function countBs(bs) {
+            var number = 0;
+            for (let i = 0; i < bs.length; i++) {
+               let bsa = bs.toLowerCase();
+               if (bsa[i] == "b") {
+                  var me = (number += 1);
+               }
+            }
+            return me;
+         }
+
+         function countChar(whole, findIn) {
+            var number = 0;
+            for (let i = 0; i < whole.length; i++) {
+               let wholy = whole.toLowerCase();
+               if (wholy[i] == findIn) {
+                  var me = (number += 1);
+               }
+            }
+            return me;
+         }
+
+         console.log(countBs("BabyBoby"));
+         // → 4
+         console.log(countChar("kakkerlakkhaker", "k"));
+         // → 6
+      </script>
+   </body>
+</html>
